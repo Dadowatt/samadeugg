@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: #333;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background: #2d00f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+.tag {
+  margin: 2px 0 0 0;
+  color: #eee;
+  font-size: 13px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+    background-color: #24009C;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px
+}
+nav ul li a{
+    color: #fff;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 8px 10px;
+}
+nav ul li a:hover{
+    color: #ff006e;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+}
+.home{
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('bn.jpg') center/cover no-repeat;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes pulse{
+    0%{
+        transform: scale(1);   
+    }
+    50%{
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 5px #ff006e;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.home a{
+    padding: 13px 25px;
+    border-radius: 30px;
+    background-color: #4300FF;
+    color: #eee;;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+.home a:hover{
+    background-color: #ff006e;
+    box-shadow: 0 0 5px 3px #2d00f7;
+    color: #fff;
+}
+.titre{
+    display: flex;
+    align-items: center;
+}
+.titre h2{
+    font-size: 3.5rem;
+}
+.titre img{
+    margin-right: 20px;
+}
+.slogan{
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+.hero{
+    font-size: medium;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    border-radius: 50px;
+}
+
+.section h2{
+    color: #2d00f7;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section{
+    padding: 85px 20px;
+    align-content: center;
+}
+.problem{
+    height: 390px;
+}
+.problem p{
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+.solution, .contact{
+    background-color: #f9fafb;
+}
+.solution h2 span{
+    font-size: 2rem;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 35px;
+}
+.card{
+    width: 280px;
+    padding: 24px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 1.6rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.card span, h3{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.card p{
+    margin-top: 8px;
+    padding: 5px;
+}
+.card i{
+    color: #2d00f7;
+    font-size: 2.3rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+}
+form input, form textarea{
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+}
+form button{
+    background-color: #2d00f7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.05rem;
+    transition: box-shadow 0.25s;
+}
+form button:hover{
+    background-color: #ff006e;
+    box-shadow: 0 0 5px 3px #2d00f7;
+    color: #fff;
+}
+.apropos .info{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.apropos .liste{
+    max-width: 700px;
+    display: grid;
+    line-height: 1.5rem;
+    margin: 20px auto;
+    gap: 10px;
+}
+.apropos .liste span{
+    margin-right: 15px;
+    color: #2d00f7;
+}
+footer{
+    background-color: #24009C;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
