@@ -451,4 +451,10 @@ footer {
   .actions {
     flex-direction: column;
   }
+  .home{
+    background: #4cc9f0;
+  }
+  .slogan{
+    text-align: center;
+  }
 }
